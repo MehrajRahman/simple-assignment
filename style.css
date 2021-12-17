@@ -1,0 +1,182 @@
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;500;600;700&display=swap");
+
+/*UNIVERSAL*/
+* {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+}
+.second-header {
+  font-size: 40px;
+  font-family: "Josefin Sans", sans-serif;
+}
+.card-header {
+  font-size: 20px;
+  font-family: "Josefin Sans", sans-serif;
+  background: none;
+  border: none;
+}
+p {
+  width: 100%;
+  text-align: center;
+  /* padding: 0 1rem 0 1rem; */
+}
+h2{
+    color: #fff;
+  font-family: "Josefin Sans", sans-serif;
+}
+/* Navbar*/
+
+.navbar {
+  /* height: 120px; */
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  overflow: hidden;
+  z-index: 100;
+  background: rgba(70, 69, 69, 0.671);
+  box-shadow: 2px solid #111;
+}
+.navbar-brand {
+  font-size: 35px;
+  font-weight: 600;
+  color: white;
+}
+.black {
+    /* z-index: 100; */
+  background-color: rgba(104, 105, 105, 0.671);
+  box-shadow: 2px solid #999;
+  /* height: 80px; */
+  color: black;
+}
+
+/*HOme page text part*/
+.home {
+  overflow: hidden;
+  height: calc(100vh);
+  background: linear-gradient(rgba(0, 0, 0, 0.205), rgba(34, 34, 34, 0.301)),
+    url("./img/mountain.jpg");
+  background-position: center;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+}
+.home-text {
+  font-size: 55px;
+  font-family: "Josefin Sans", sans-serif;
+}
+.icon {
+  margin-top: 50px;
+  font-size: 80px;
+  /* animation: pulse 1.5s infinite; */
+  /* transform: scale(1); */
+  background: #111;
+  border-radius: 90%;
+  color: #111;
+  animation: pulse-black 2s infinite;
+}
+
+/**Main Part*/
+.icon-two {
+  color: rgb(66, 109, 248);
+  font-size: 65px;
+  text-align: center;
+  margin: auto;
+  width: 100%;
+}
+@keyframes pulse-black {
+  0% {
+    /* transform: scale(0.95); */
+    box-shadow: 0 0 0 0 rgba(34, 34, 34, 0.7);
+  }
+
+  70% {
+    /* transform: scale(1); */
+    box-shadow: 0 0 0 10px rgba(247, 247, 247, 0);
+  }
+
+  100% {
+    /* transform: scale(0.95); */
+    box-shadow: 0 0 0 0 rgba(212, 211, 211, 0);
+  }
+}
+/*TEAM PART*/
+.img-team {
+  width: fit-content;
+  display: block;
+  margin: auto;
+}
+.team-text {
+  color: #999999;
+  font-size: 14px;
+  width: 50%;
+  margin: auto;
+  font-weight: 400;
+  line-height: 24px;
+}
+
+/*Money PART*/
+sup{
+    font-size: 20px;
+}
+.money{
+    font-style: italic;
+    margin: 0;
+    padding: 0;
+    font-size: 50px;
+}
+.sub{
+    font-size: 15px;
+}
+#button{
+    width: 100%;
+    margin: auto;
+    border-radius:30px;
+}
+.card-text{
+    color: #999;
+    font-size: 14px;
+    margin: 1rem 0;
+    font-style: italic;
+}
+
+/** DIGITAL*/
+.digital{
+    background-color: #4e66c0 !important;
+    height: 300px;
+}
+#button2{
+    width: 30%;
+    margin: auto;
+    border-radius:30px;
+    color: #fff;
+    border-color: #fff;
+}
+
+/*FOOTER*/
+footer{
+    background-color: #333333 !important;
+    padding: 60px 0;
+}
+.logo{
+    padding-right: 20px;
+    font-size: 35px;
+}
+
+@media only screen and (min-width: 1024px) {
+  .large-screen {
+    display: flex;
+    /* background: #000; */
+    justify-content: right;
+  }
+  .nav-item {
+    padding: 0 1rem;
+  }
+}
+@media only screen and (max-width: 1024px) {
+    .img-team {
+        width: 80vw;
+        display: block;
+        margin: auto;
+      }
+}
